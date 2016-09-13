@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.wu.my.guagua.activity.CartoonActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_cartoon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout"
+        />
+
+    <TextView
+        android:id="@+id/textView_cartoon_nextAndUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout"
+        android:background="#ee867d7d"
+        android:gravity="center"
+        android:text="加载"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        >
+
+        <TextView
+            android:id="@+id/textView_cartoon_updateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="updateTime"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/textView_cartoon_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="title"
+            android:textColor="#fff"
+            />
+
+
+        <TextView
+            android:id="@+id/textView_cartoon_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/textView_cartoon_title"
+            android:text="progress"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/textView_cartoon_electric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="electric"
+            android:textColor="#fff"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_cartoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        >
+
+        <Button
+            android:id="@+id/bt_changeScreem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#33f7f3f3"
+            android:text="切换屏幕"
+            android:textSize="10sp"
+            android:onClick="onClick"
+            />
+
+        <Button
+            android:id="@+id/bt_changelight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_changeScreem"
+            android:layout_marginTop="5dp"
+            android:background="#33f7f3f3"
+            android:onClick="onClick"
+            android:text="调节亮度"
+            android:textSize="10sp"
+            />
+    </RelativeLayout>
+    <SeekBar
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/seekbar_cartoon_light"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

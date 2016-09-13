@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.wu.my.guagua.activity.DetailsActivity">
+    <item
+        android:id="@+id/action_comment"
+        android:orderInCategory="100"
+        android:title="评论"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_introduce"
+        android:orderInCategory="100"
+        android:title="漫画介绍"
+        app:showAsAction="never"/>
+</menu>

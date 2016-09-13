@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+    >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simpleDraweeView_listview_bookrack_icon"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/app_icon"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/simpleDraweeView_listview_bookrack_icon"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView_listView_bookrack_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            />
+
+        <TextView
+            android:id="@+id/textView_listView_bookrack_updateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="updateTime"
+            />
+
+        <TextView
+            android:id="@+id/textView_listView_bookrack_upTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="upTo"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageButton_listView_bookrack_details"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/icon_cache_menubtn"
+        />
+</RelativeLayout>
